@@ -1,20 +1,21 @@
-import { WP_API_BASE_URL, WP_API_USERNAME, WP_API_PASSWORD } from "./keychain.js";
+const apiUrl = "https://cdr2b.pro/wp-json/wp/v2/posts?per_page=10";
 
-const apiPath = "wp/v2/posts";
-const endPoint = `${WP_API_BASE_URL}${apiPath}`;
-
-fetch(endPoint, {
-    headers: {
-        Authorization: `Basic ${btoa(`${WP_API_USERNAME}:${WP_API_PASSWORD}`)}`,
-    },
-})
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        data.forEach(post => {
-            console.log(post.title.rendered);
-            console.log(post.content.rendered);
-        });
-    })
-    .catch(error => console.error(error));
-
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(posts => {
+    // Process the fetched data
+    posts.forEach(post => {
+      const title = post.title.rendered;
+      const featuredImage = post.featured_media;
+      const description = post.excerpt.rendered;
+      
+      // Display the data or perform further actions
+      console.log("Title:", title);
+      console.log("Featured Image:", featuredImage);
+      console.log("Description:", description);
+    });
+  })
+  .catch(error => {
+    // Handle any errors that occurred during the fetch
+    console.error("Error fetching blog posts:", error);
+  });
