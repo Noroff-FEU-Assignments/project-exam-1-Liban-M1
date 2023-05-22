@@ -63,7 +63,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #5bdaaf;
+  background: #5ae4a8;
 }
 
 nav ul li a.active {
@@ -81,7 +81,7 @@ nav ul li a.active {
 }
 
 .hamburger:hover {
-  background: #c5e6ff;
+  background: #5ae4a8;
 }
 
 .hamburger div {
