@@ -50,7 +50,7 @@ function fetchPost() {
         postDetailsContainer.appendChild(title);
         postDetailsContainer.appendChild(content);
 
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 5; i++) {
             const lorem = document.createElement("p");
             lorem.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus sem id justo rhoncus aliquet. Sed vulputate velit id sem lacinia efficitur. Morbi bibendum varius arcu, eu semper lectus cursus ac. Nulla in feugiat ipsum. Sed nec fermentum lectus, nec consequat magna. Nulla eu ex nisi. Aliquam id elit eu turpis gravida consectetur ut nec eros. Nullam non dapibus neque. Suspendisse potenti.";
             content.appendChild(lorem);
