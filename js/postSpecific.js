@@ -9,9 +9,19 @@ const postDetailsContainer = document.getElementById("post-details");
 function fetchPost() {
     const url = `https://cdr2b.pro/wp-json/wp/v2/posts/${postId}`;
 
+    function setPageTitle(title) {
+        const pageTitle = document.querySelector("title");
+        pageTitle.textContent = `CDR2B.PRO | ${title} `;
+    }
+    
+    
     fetch(url)
     .then((Response) => Response.json())
     .then(post => {
+
+        const postTitle = post.title.rendered;
+        setPageTitle(postTitle);
+
         const title = document.createElement("h1");
         title.textContent = post.title.rendered;
 

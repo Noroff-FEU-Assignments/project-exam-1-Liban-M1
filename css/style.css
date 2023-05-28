@@ -1,6 +1,6 @@
-* {
+*  {
     
-    
+  
   box-sizing: border-box;
   list-style: none;
   font-family: italic;
@@ -163,6 +163,7 @@ nav ul li a.active {
   justify-content: space-between;
   align-items: center;
   margin: 35px;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .hero-text{
@@ -260,7 +261,7 @@ nav ul li a.active {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .slide {
     flex: 0 0 25%;
     max-width: 25%;
@@ -301,7 +302,8 @@ nav ul li a.active {
   color: black;
   display: block;
   margin: 0 2px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: bolder;
   padding: 8px 18px;
   transition: 0.3s;
   border-radius: 30px;
@@ -324,6 +326,7 @@ nav ul li a.active {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
   padding: 2%;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .card {
@@ -432,6 +435,46 @@ nav ul li a.active {
 
 /*-----Blog List */
 
+/*-----Blog Post */
+
+.post-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 150px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#featured-image img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#post-details {
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+#post-details h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#post-details div {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+/*Blog Post----- */
+
 /*-----Contact Form */
 
 .cnt-intro-container {
@@ -441,7 +484,7 @@ nav ul li a.active {
   align-items: center;
   text-align: center;
   padding: 15px;
-  
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .cnt-intro-img-container {
@@ -508,6 +551,7 @@ nav ul li a.active {
   font-weight: bolder;
   color: white;
   background-color: #1b2e35;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .form-container p {
