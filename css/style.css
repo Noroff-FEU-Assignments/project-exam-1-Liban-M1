@@ -606,7 +606,7 @@ nav ul li a.active {
 }
 
 .form-error {
-  color: rgb(210, 3, 3);
+  color: red;
   font-size: 18px;
   display: none;
   margin-top: 5px;
