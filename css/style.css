@@ -156,6 +156,7 @@ nav ul li a.active {
 
 .highlight {
   color: #5ae4a8;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .hero-section {
