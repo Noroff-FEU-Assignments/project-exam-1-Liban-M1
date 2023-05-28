@@ -61,7 +61,7 @@ function fetchPosts() {
 
             const text = document.createElement("div");
             text.className = "text";
-            text.innerHTML = truncateText(post.content.rendered, 200);
+            text.innerHTML = truncateText(post.content.rendered, 150);
 
             textBox.appendChild(heading);
             textBox.appendChild(text);
